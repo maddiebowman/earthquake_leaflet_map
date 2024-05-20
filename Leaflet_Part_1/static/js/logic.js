@@ -29,7 +29,7 @@ function createMap(earthquakes) {
         collapsed: false
     }).addTo(map); // Add the layer control to the map
 
-    // Create function to adjust marker color based on depth
+    // Create getColor function to adjust marker color based on depth
     function getColor(depth) {
         return depth >= 90 ? '#660000' :
                depth >= 70 ? '#b30000' :
@@ -39,7 +39,7 @@ function createMap(earthquakes) {
                '#ffcc66';
     }
 
-    // Function to get radius based on magnitude
+    // Create getRadius function to get radius based on magnitude
     function getRadius(magnitude) {
         return magnitude >= 7.5 ? magnitude * 50000 :
                magnitude >= 6.5 ? magnitude * 45000 :
@@ -84,7 +84,7 @@ function createMap(earthquakes) {
         let div = L.DomUtil.create('div', 'info legend');
         let depths = [-10, 10, 30, 50, 70, 90];
         let labels = [];
-    
+        // Adding background, boarder and padding to legend
         div.style.backgroundColor = 'white';
         div.style.border = '1px solid black';
         div.style.padding = '10px';
