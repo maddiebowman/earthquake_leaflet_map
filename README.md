@@ -7,11 +7,11 @@ https://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/all_day.geojson
 ##### Marker Color = Earthquake Depth → Marker Size = Earthquake Magnitude
 Hint: The depth of the earth can be found as the third coordinate for each earthquake
 
-![Earthquake Map](./Leaflet_Part_1/Images/earthquake_map.png)
+![Earthquake Map](./Images/earthquake_map.png)
 
 
 #### Example of Visible Earthquake Data
-![Earthquake Data](./Leaflet_Part_1/Images/individual_earthquake_data.png)
+![Earthquake Data](./Images/individual_earthquake_data.png)
 
 ### Resources
 * HTML Color Picker (adjusting marker colors for ranges of earthquake depth)
